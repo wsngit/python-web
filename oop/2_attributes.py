@@ -23,9 +23,11 @@ print(f"Student 1: {valera.name}")
 print(f"Student 2: {sasha.name}")
 
 #Student.university = 'МГУ'
+#valera.university = 'МГУ'
 
 print(f"Student 1 university: {valera.university}")
 print(f"Student 2 university: {sasha.university}")
+print(f"All Students university: {Student.university}")
 
 #print(valera.__password)
 #valera.print_info()
