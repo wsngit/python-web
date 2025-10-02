@@ -19,3 +19,7 @@ def hello_name(request):
 @api_view(['GET'])
 def hello(request, name):
     return Response({"message": f"Hello {name}!"})
+
+@api_view(['GET'])
+def params(request):
+    return Response(request.query_params)
