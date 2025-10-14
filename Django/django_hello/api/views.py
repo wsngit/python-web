@@ -23,3 +23,11 @@ def hello(request, name):
 @api_view(['GET'])
 def params(request):
     return Response(request.query_params)
+
+@api_view(['GET', 'POST'])
+def request_info(request):
+    return Response({
+        'headers': dict(request.headers),
+        'body': request.data,
+        'GET params': request.query_params,
+    })

@@ -9,6 +9,7 @@ urlpatterns = [
     path('hello/<str:name>/', views.hello),
 
     path('params/', views.params),
+    path('request_info', views.request_info, name='request_info'),
 
 ]
 

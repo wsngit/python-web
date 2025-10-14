@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework', # Добавляем DRF
     'helloapp',  # Добавляем приложение helloapp
     'api',
+    'files',
 ]
 
 MIDDLEWARE = [
