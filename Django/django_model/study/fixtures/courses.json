@@ -1,0 +1,92 @@
+[
+  {
+    "model": "study.course",
+    "pk": 1,
+    "fields": {
+      "name": "Программирование на Python",
+      "code": "PY101",
+      "description": "Основы программирования на языке Python"
+    }
+  },
+  {
+    "model": "study.course",
+    "pk": 2,
+    "fields": {
+      "name": "Веб-разработка на Django",
+      "code": "DJ202",
+      "description": "Создание веб-приложений с использованием Django"
+    }
+  },
+  {
+    "model": "study.course",
+    "pk": 3,
+    "fields": {
+      "name": "Базы данных и SQL",
+      "code": "DB303",
+      "description": "Проектирование и работа с реляционными базами данных"
+    }
+  },
+  {
+    "model": "study.course",
+    "pk": 4,
+    "fields": {
+      "name": "Фронтенд разработка",
+      "code": "FE404",
+      "description": "HTML, CSS, JavaScript и современные фреймворки"
+    }
+  },
+  {
+    "model": "study.course",
+    "pk": 5,
+    "fields": {
+      "name": "Машинное обучение",
+      "code": "ML505",
+      "description": "Основы искусственного интеллекта и машинного обучения"
+    }
+  },
+  {
+    "model": "study.course",
+    "pk": 6,
+    "fields": {
+      "name": "Мобильная разработка",
+      "code": "MD606",
+      "description": "Создание мобильных приложений для iOS и Android"
+    }
+  },
+  {
+    "model": "study.course",
+    "pk": 7,
+    "fields": {
+      "name": "Кибербезопасность",
+      "code": "CS707",
+      "description": "Основы информационной безопасности"
+    }
+  },
+  {
+    "model": "study.course",
+    "pk": 8,
+    "fields": {
+      "name": "DevOps практики",
+      "code": "DO808",
+      "description": "Автоматизация процессов разработки и развертывания"
+    }
+  },
+  {
+    "model": "study.course",
+    "pk": 9,
+    "fields": {
+      "name": "Алгоритмы и структуры данных",
+      "code": "AL909",
+      "description": "Изучение основных алгоритмов и структур данных"
+    }
+  },
+  {
+    "model": "study.course",
+    "pk": 10,
+    "fields": {
+      "name": "Проектный менеджмент",
+      "code": "PM010",
+      "description": "Управление IT проектами и командами"
+    }
+  }
+]

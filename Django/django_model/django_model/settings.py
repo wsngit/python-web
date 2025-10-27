@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework', # Добавляем DRF
     'study',
 ]
 
@@ -79,6 +80,38 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# PostresSQL
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': 'student_management',
+#        'USER': 'postgres',
+#        'PASSWORD': 'password',
+#        'HOST': '172.24.200.176',
+#        'PORT': '5432',
+#        'CONN_MAX_AGE': 60,
+#        'OPTIONS': {
+#            'connect_timeout': 10,
+#        }
+#    }
+#}
+
+# MySQL
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'student_management',
+#        'USER': 'django_user',
+#        'PASSWORD': 'django123',
+#        'HOST': '172.24.200.176',
+#        'PORT': '3306',
+#        'OPTIONS': {
+#            'charset': 'utf8mb4',
+#            'connect_timeout': 10,
+#        }
+#    }
+#}
 
 
 # Password validation

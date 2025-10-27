@@ -1,0 +1,392 @@
+[
+  {
+    "model": "study.student",
+    "pk": 1,
+    "fields": {
+      "student_id": "STU001",
+      "first_name": "Иван",
+      "last_name": "Иванов",
+      "group": 1,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 2,
+    "fields": {
+      "student_id": "STU002",
+      "first_name": "Петр",
+      "last_name": "Петров",
+      "group": 1,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 3,
+    "fields": {
+      "student_id": "STU003",
+      "first_name": "Мария",
+      "last_name": "Сидорова",
+      "group": 1,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 4,
+    "fields": {
+      "student_id": "STU004",
+      "first_name": "Анна",
+      "last_name": "Кузнецова",
+      "group": 1,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 5,
+    "fields": {
+      "student_id": "STU005",
+      "first_name": "Сергей",
+      "last_name": "Смирнов",
+      "group": 1,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 6,
+    "fields": {
+      "student_id": "STU006",
+      "first_name": "Елена",
+      "last_name": "Попова",
+      "group": 1,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 7,
+    "fields": {
+      "student_id": "STU007",
+      "first_name": "Дмитрий",
+      "last_name": "Васильев",
+      "group": 1,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 8,
+    "fields": {
+      "student_id": "STU008",
+      "first_name": "Ольга",
+      "last_name": "Новикова",
+      "group": 1,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 9,
+    "fields": {
+      "student_id": "STU009",
+      "first_name": "Алексей",
+      "last_name": "Морозов",
+      "group": 1,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 10,
+    "fields": {
+      "student_id": "STU010",
+      "first_name": "Наталья",
+      "last_name": "Волкова",
+      "group": 1,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 11,
+    "fields": {
+      "student_id": "STU011",
+      "first_name": "Андрей",
+      "last_name": "Алексеев",
+      "group": 2,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 12,
+    "fields": {
+      "student_id": "STU012",
+      "first_name": "Татьяна",
+      "last_name": "Лебедева",
+      "group": 2,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 13,
+    "fields": {
+      "student_id": "STU013",
+      "first_name": "Михаил",
+      "last_name": "Семенов",
+      "group": 2,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 14,
+    "fields": {
+      "student_id": "STU014",
+      "first_name": "Юлия",
+      "last_name": "Павлова",
+      "group": 2,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 15,
+    "fields": {
+      "student_id": "STU015",
+      "first_name": "Владимир",
+      "last_name": "Козлов",
+      "group": 2,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 16,
+    "fields": {
+      "student_id": "STU016",
+      "first_name": "Светлана",
+      "last_name": "Степанова",
+      "group": 2,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 17,
+    "fields": {
+      "student_id": "STU017",
+      "first_name": "Артем",
+      "last_name": "Никитин",
+      "group": 2,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 18,
+    "fields": {
+      "student_id": "STU018",
+      "first_name": "Екатерина",
+      "last_name": "Орлова",
+      "group": 2,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 19,
+    "fields": {
+      "student_id": "STU019",
+      "first_name": "Игорь",
+      "last_name": "Андреев",
+      "group": 2,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 20,
+    "fields": {
+      "student_id": "STU020",
+      "first_name": "Людмила",
+      "last_name": "Макарова",
+      "group": 2,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 21,
+    "fields": {
+      "student_id": "STU021",
+      "first_name": "Роман",
+      "last_name": "Николаев",
+      "group": 3,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 22,
+    "fields": {
+      "student_id": "STU022",
+      "first_name": "Галина",
+      "last_name": "Захарова",
+      "group": 3,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 23,
+    "fields": {
+      "student_id": "STU023",
+      "first_name": "Виктор",
+      "last_name": "Борисов",
+      "group": 3,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 24,
+    "fields": {
+      "student_id": "STU024",
+      "first_name": "Марина",
+      "last_name": "Киселева",
+      "group": 3,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 25,
+    "fields": {
+      "student_id": "STU025",
+      "first_name": "Павел",
+      "last_name": "Григорьев",
+      "group": 3,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 26,
+    "fields": {
+      "student_id": "STU026",
+      "first_name": "Алина",
+      "last_name": "Яковлева",
+      "group": 3,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 27,
+    "fields": {
+      "student_id": "STU027",
+      "first_name": "Константин",
+      "last_name": "Федоров",
+      "group": 3,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 28,
+    "fields": {
+      "student_id": "STU028",
+      "first_name": "Валерия",
+      "last_name": "Романова",
+      "group": 3,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 29,
+    "fields": {
+      "student_id": "STU029",
+      "first_name": "Станислав",
+      "last_name": "Власов",
+      "group": 3,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "study.student",
+    "pk": 30,
+    "fields": {
+      "student_id": "STU030",
+      "first_name": "Диана",
+      "last_name": "Титова",
+      "group": 3,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  }
+]

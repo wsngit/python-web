@@ -1,0 +1,29 @@
+[
+  {
+    "model": "study.group",
+    "pk": 1,
+    "fields": {
+      "name": "Группа ПИ-21-1",
+      "code": "PI-21-1",
+      "courses": [1, 2, 3, 4]
+    }
+  },
+  {
+    "model": "study.group",
+    "pk": 2,
+    "fields": {
+      "name": "Группа ИС-21-2",
+      "code": "IS-21-2",
+      "courses": [2, 3, 5, 7]
+    }
+  },
+  {
+    "model": "study.group",
+    "pk": 3,
+    "fields": {
+      "name": "Группа КБ-21-3",
+      "code": "KB-21-3",
+      "courses": [1, 5, 6, 7, 8]
+    }
+  }
+]

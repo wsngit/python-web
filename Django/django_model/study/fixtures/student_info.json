@@ -1,0 +1,332 @@
+[
+  {
+    "model": "study.studentinfo",
+    "pk": 1,
+    "fields": {
+      "address": "ул. Ленина, д. 10, кв. 5, Москва",
+      "email": "ivanov@edu.ru",
+      "phone": "+7 (495) 123-45-67",
+      "date_of_birth": "2000-05-15",
+      "student": 1
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 2,
+    "fields": {
+      "address": "пр. Мира, д. 25, кв. 12, Москва",
+      "email": "petrov@edu.ru",
+      "phone": "+7 (495) 234-56-78",
+      "date_of_birth": "2001-03-20",
+      "student": 2
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 3,
+    "fields": {
+      "address": "ул. Пушкина, д. 5, кв. 8, Москва",
+      "email": "sidorova@edu.ru",
+      "phone": "+7 (495) 345-67-89",
+      "date_of_birth": "2000-11-10",
+      "student": 3
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 4,
+    "fields": {
+      "address": "ул. Гагарина, д. 15, кв. 3, Москва",
+      "email": "kuznetsova@edu.ru",
+      "phone": "+7 (495) 456-78-90",
+      "date_of_birth": "2001-07-25",
+      "student": 4
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 5,
+    "fields": {
+      "address": "ул. Кирова, д. 8, кв. 11, Москва",
+      "email": "smirnov@edu.ru",
+      "phone": "+7 (495) 567-89-01",
+      "date_of_birth": "2000-12-03",
+      "student": 5
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 6,
+    "fields": {
+      "address": "пр. Ленинградский, д. 40, кв. 25, Москва",
+      "email": "popova@edu.ru",
+      "phone": "+7 (495) 678-90-12",
+      "date_of_birth": "2001-01-18",
+      "student": 6
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 7,
+    "fields": {
+      "address": "ул. Тверская, д. 18, кв. 7, Москва",
+      "email": "vasilev@edu.ru",
+      "phone": "+7 (495) 789-01-23",
+      "date_of_birth": "2000-09-22",
+      "student": 7
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 8,
+    "fields": {
+      "address": "ул. Арбат, д. 32, кв. 14, Москва",
+      "email": "novikova@edu.ru",
+      "phone": "+7 (495) 890-12-34",
+      "date_of_birth": "2001-04-30",
+      "student": 8
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 9,
+    "fields": {
+      "address": "ул. Садовая, д. 12, кв. 9, Москва",
+      "email": "morozov@edu.ru",
+      "phone": "+7 (495) 901-23-45",
+      "date_of_birth": "2000-08-14",
+      "student": 9
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 10,
+    "fields": {
+      "address": "пр. Вернадского, д. 105, кв. 33, Москва",
+      "email": "volkova@edu.ru",
+      "phone": "+7 (495) 012-34-56",
+      "date_of_birth": "2001-02-28",
+      "student": 10
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 11,
+    "fields": {
+      "address": "ул. Профсоюзная, д. 88, кв. 16, Москва",
+      "email": "alekseev@edu.ru",
+      "phone": "+7 (495) 123-45-78",
+      "date_of_birth": "2000-06-11",
+      "student": 11
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 12,
+    "fields": {
+      "address": "ул. Дмитровская, д. 22, кв. 6, Москва",
+      "email": "lebedeva@edu.ru",
+      "phone": "+7 (495) 234-56-89",
+      "date_of_birth": "2001-10-05",
+      "student": 12
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 13,
+    "fields": {
+      "address": "ул. Щербаковская, д. 17, кв. 19, Москва",
+      "email": "semenov@edu.ru",
+      "phone": "+7 (495) 345-67-90",
+      "date_of_birth": "2000-03-17",
+      "student": 13
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 14,
+    "fields": {
+      "address": "ул. Верхняя, д. 44, кв. 22, Москва",
+      "email": "pavlova@edu.ru",
+      "phone": "+7 (495) 456-78-01",
+      "date_of_birth": "2001-12-08",
+      "student": 14
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 15,
+    "fields": {
+      "address": "ул. Нижняя, д. 9, кв. 4, Москва",
+      "email": "kozlov@edu.ru",
+      "phone": "+7 (495) 567-89-12",
+      "date_of_birth": "2000-04-21",
+      "student": 15
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 16,
+    "fields": {
+      "address": "пр. Буденного, д. 31, кв. 13, Москва",
+      "email": "stepanova@edu.ru",
+      "phone": "+7 (495) 678-90-23",
+      "date_of_birth": "2001-08-02",
+      "student": 16
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 17,
+    "fields": {
+      "address": "ул. Старая, д. 7, кв. 10, Москва",
+      "email": "nikitin@edu.ru",
+      "phone": "+7 (495) 789-01-34",
+      "date_of_birth": "2000-01-25",
+      "student": 17
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 18,
+    "fields": {
+      "address": "ул. Новая, д. 14, кв. 18, Москва",
+      "email": "orlova@edu.ru",
+      "phone": "+7 (495) 890-12-45",
+      "date_of_birth": "2001-05-19",
+      "student": 18
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 19,
+    "fields": {
+      "address": "ул. Центральная, д. 3, кв. 2, Москва",
+      "email": "andreev@edu.ru",
+      "phone": "+7 (495) 901-23-56",
+      "date_of_birth": "2000-10-12",
+      "student": 19
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 20,
+    "fields": {
+      "address": "ул. Школьная, д. 11, кв. 7, Москва",
+      "email": "makarova@edu.ru",
+      "phone": "+7 (495) 012-34-67",
+      "date_of_birth": "2001-07-07",
+      "student": 20
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 21,
+    "fields": {
+      "address": "ул. Студенческая, д. 6, кв. 15, Москва",
+      "email": "nikolaev@edu.ru",
+      "phone": "+7 (495) 123-45-89",
+      "date_of_birth": "2000-02-14",
+      "student": 21
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 22,
+    "fields": {
+      "address": "ул. Университетская, д. 29, кв. 11, Москва",
+      "email": "zakharova@edu.ru",
+      "phone": "+7 (495) 234-56-90",
+      "date_of_birth": "2001-09-28",
+      "student": 22
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 23,
+    "fields": {
+      "address": "пр. Научный, д. 55, кв. 26, Москва",
+      "email": "borisov@edu.ru",
+      "phone": "+7 (495) 345-67-01",
+      "date_of_birth": "2000-11-03",
+      "student": 23
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 24,
+    "fields": {
+      "address": "ул. Академическая, д. 13, кв. 8, Москва",
+      "email": "kiseleva@edu.ru",
+      "phone": "+7 (495) 456-78-12",
+      "date_of_birth": "2001-04-16",
+      "student": 24
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 25,
+    "fields": {
+      "address": "ул. Исследователей, д. 20, кв. 17, Москва",
+      "email": "grigorev@edu.ru",
+      "phone": "+7 (495) 567-89-23",
+      "date_of_birth": "2000-12-29",
+      "student": 25
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 26,
+    "fields": {
+      "address": "ул. Лабораторная, д. 4, кв. 3, Москва",
+      "email": "yakovleva@edu.ru",
+      "phone": "+7 (495) 678-90-34",
+      "date_of_birth": "2001-06-22",
+      "student": 26
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 27,
+    "fields": {
+      "address": "пр. Технический, д. 77, кв. 30, Москва",
+      "email": "fedorov@edu.ru",
+      "phone": "+7 (495) 789-01-45",
+      "date_of_birth": "2000-08-07",
+      "student": 27
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 28,
+    "fields": {
+      "address": "ул. Инновационная, д. 16, кв. 12, Москва",
+      "email": "romanova@edu.ru",
+      "phone": "+7 (495) 890-12-56",
+      "date_of_birth": "2001-01-31",
+      "student": 28
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 29,
+    "fields": {
+      "address": "ул. Проектная, д. 2, кв. 1, Москва",
+      "email": "vlasov@edu.ru",
+      "phone": "+7 (495) 901-23-67",
+      "date_of_birth": "2000-05-24",
+      "student": 29
+    }
+  },
+  {
+    "model": "study.studentinfo",
+    "pk": 30,
+    "fields": {
+      "address": "ул. Экспериментальная, д. 19, кв. 14, Москва",
+      "email": "titova@edu.ru",
+      "phone": "+7 (495) 012-34-78",
+      "date_of_birth": "2001-10-17",
+      "student": 30
+    }
+  }
+]
