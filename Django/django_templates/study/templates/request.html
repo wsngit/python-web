@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Django</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<!-- URL текущей страницы -->
+<p>Текущий путь: {{ request.path }}</p>
+
+<!-- GET параметры -->
+<p>Параметр id: {{ request.GET.id }}</p>
+
+<!-- Метод запроса -->
+<p>Метод: {{ request.method }}</p>
+
+<!-- Пользователь -->
+<p>Пользователь: {{ request.user }}</p>
+</body>
+</html>

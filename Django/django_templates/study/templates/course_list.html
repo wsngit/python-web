@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список курсов</title>
+    <style>
+        .course-list {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .course-card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 4px solid #007bff;
+        }
+        .course-card h2 {
+            margin-top: 0;
+        }
+        .course-stats {
+            display: flex;
+            gap: 15px;
+            margin: 10px 0;
+        }
+        .stat {
+            background: #f8f9fa;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        .detail-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="course-list">
+    <h1>Список курсов</h1>
+
+    {% if course_data %}
+    {% for item in course_data %}
+    <div class="course-card">
+        <h2>{{ item.course.name }}</h2>
+        <p><strong>Код:</strong> {{ item.course.code }}</p>
+
+        {% if item.course.description %}
+        <p>{{ item.course.description|truncatewords:30 }}</p>
+        {% endif %}
+
+        <div class="course-stats">
+            <span class="stat">Группы: {{ item.groups_count }}</span>
+            <span class="stat">Студенты: {{ item.students_count }}</span>
+        </div>
+
+        <a href="{% url 'course_detail' item.course.id %}" class="detail-link">
+            Подробнее о курсе →
+        </a>
+    </div>
+    {% endfor %}
+    {% else %}
+    <p>Курсы не найдены.</p>
+    {% endif %}
+</div>
+</body>
+</html>

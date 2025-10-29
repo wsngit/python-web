@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание курса</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<h1>Создать новый курс</h1>
+
+<form method="post">
+    {% csrf_token %}
+
+    <div class="form-group">
+        <label>Название курса</label>
+        <input type="text" name="name" placeholder="Введите название">
+    </div>
+
+    <div class="form-group">
+        <label>Код курса</label>
+        <input type="text" name="code" placeholder="Введите код">
+    </div>
+
+    <div class="form-group">
+        <label>Описание</label>
+        <textarea name="description" placeholder="Введите описание"></textarea>
+    </div>
+
+    <button type="submit">Создать курс</button>
+    <a href="/courses/">Отмена</a>
+</form>
+</body>
+</html>
