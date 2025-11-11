@@ -1,0 +1,37 @@
+<!-- Указываем родительский шаблон -->
+{% extends "base.html" %}
+
+<!-- Переопределяем заголовок -->
+{% block title %}Главная страница - Мой сайт{% endblock %}
+
+<!-- Добавляем дополнительные CSS -->
+{% block extra_css %}
+<style>
+    .hero-section {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 100px 0;
+    }
+</style>
+{% endblock %}
+
+<!-- Переопределяем основной контент -->
+{% block content %}
+
+    {% block hello %}{% endblock %}
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <h3>Функция 1</h3>
+        <p>Описание первой функции</p>
+    </div>
+    <div class="col-md-4">
+        <h3>Функция 2</h3>
+        <p>Описание второй функции</p>
+    </div>
+    <div class="col-md-4">
+        <h3>Функция 3</h3>
+        <p>Описание третьей функции</p>
+    </div>
+</div>
+{% endblock %}

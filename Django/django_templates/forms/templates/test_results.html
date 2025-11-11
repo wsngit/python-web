@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результаты теста</title>
+    {% load static %}
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'forms/css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="text-center mb-0">Результаты теста</h2>
+                </div>
+                <div class="card-body p-4">
+                    <div class="text-center mb-4">
+                        <div class="score-display {% if percentage >= 80 %}text-success{% elif percentage >= 60 %}text-warning{% else %}text-danger{% endif %}">
+                            {{ score }}/{{ total }} ({{ percentage }}%)
+                        </div>
+
+                        {% if percentage >= 80 %}
+                        <div class="alert alert-success mt-3">Отлично! Отличное знание синтаксиса Python!</div>
+                        {% elif percentage >= 60 %}
+                        <div class="alert alert-warning mt-3">Хорошо! Но есть что подучить.</div>
+                        {% else %}
+                        <div class="alert alert-danger mt-3">Попробуйте еще раз! Рекомендуется повторить основы Python.</div>
+                        {% endif %}
+                    </div>
+
+                    <h4 class="mb-3">Детализация ответов:</h4>
+
+                    <!-- Результаты по каждому вопросу -->
+                    <div class="result-card p-3 rounded {% if results.question_1 %}correct{% else %}incorrect{% endif %}">
+                        <strong>Вопрос 1:</strong> Какой оператор используется для создания комментария в Python?<br>
+                        <small class="{% if results.question_1 %}text-success{% else %}text-danger{% endif %}">
+                            {% if results.question_1 %}✓ Правильно{% else %}✗ Неправильно{% endif %}
+                        </small>
+                    </div>
+
+                    <div class="result-card p-3 rounded {% if results.question_2 %}correct{% else %}incorrect{% endif %}">
+                        <strong>Вопрос 2:</strong> Как называется изменяемая последовательность элементов в Python?<br>
+                        <small class="{% if results.question_2 %}text-success{% else %}text-danger{% endif %}">
+                            {% if results.question_2 %}✓ Правильно{% else %}✗ Неправильно{% endif %}
+                        </small>
+                    </div>
+
+                    <div class="result-card p-3 rounded {% if results.question_3 %}correct{% else %}incorrect{% endif %}">
+                        <strong>Вопрос 3:</strong> Какое ключевое слово используется для определения функции?<br>
+                        <small class="{% if results.question_3 %}text-success{% else %}text-danger{% endif %}">
+                            {% if results.question_3 %}✓ Правильно{% else %}✗ Неправильно{% endif %}
+                        </small>
+                    </div>
+
+                    <div class="result-card p-3 rounded {% if results.question_4 %}correct{% else %}incorrect{% endif %}">
+                        <strong>Вопрос 4:</strong> Что используется для обозначения блоков кода в Python?<br>
+                        <small class="{% if results.question_4 %}text-success{% else %}text-danger{% endif %}">
+                            {% if results.question_4 %}✓ Правильно{% else %}✗ Неправильно{% endif %}
+                        </small>
+                    </div>
+
+                    <div class="result-card p-3 rounded {% if results.question_5 %}correct{% else %}incorrect{% endif %}">
+                        <strong>Вопрос 5:</strong> Напишите пример создания словаря с ключами 'name' и 'age'<br>
+                        <small class="{% if results.question_5 %}text-success{% else %}text-danger{% endif %}">
+                            {% if results.question_5 %}✓ Правильно{% else %}✗ Неправильно{% endif %}
+                        </small>
+                    </div>
+
+                    <div class="result-card p-3 rounded {% if results.question_6 %}correct{% else %}incorrect{% endif %}">
+                        <strong>Вопрос 6:</strong> Сколько элементов будет в списке после выполнения: list(range(5))?<br>
+                        <small class="{% if results.question_6 %}text-success{% else %}text-danger{% endif %}">
+                            {% if results.question_6 %}✓ Правильно{% else %}✗ Неправильно{% endif %}
+                        </small>
+                    </div>
+
+                    <div class="result-card p-3 rounded {% if results.question_7 %}correct{% else %}incorrect{% endif %}">
+                        <strong>Вопрос 7:</strong> В Python строки являются изменяемыми объектами<br>
+                        <small class="{% if results.question_7 %}text-success{% else %}text-danger{% endif %}">
+                            {% if results.question_7 %}✓ Правильно{% else %}✗ Неправильно{% endif %}
+                        </small>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <a href="{% url 'python_test' %}" class="btn btn-primary btn-lg">Пройти тест еще раз</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

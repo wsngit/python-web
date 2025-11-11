@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Простая галерея</title>
+    {% load static %}
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'forms/css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+<div class="gallery-container">
+    <!-- Заголовок -->
+    <div class="header">
+        <h1>🖼️ Простая галерея</h1>
+        <p>Загружайте и просматривайте изображения</p>
+        <a href="/" class="btn btn-outline-secondary">← На главную</a>
+    </div>
+
+    <!-- Форма загрузки -->
+    <div class="upload-form">
+        <h3>Загрузить изображение</h3>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <div class="mb-3">
+                <label class="form-label">Название (необязательно)</label>
+                <input type="text" name="title" class="form-control" placeholder="Введите название">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Изображение *</label>
+                <input type="file" name="image" class="form-control" accept="image/*" required>
+                <div class="form-text">Максимальный размер: 5MB. Форматы: JPG, PNG, GIF</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Загрузить</button>
+        </form>
+    </div>
+
+    <!-- Галерея изображений -->
+    <h3> Изображения ({{ images|length }})</h3>
+
+    {% if images %}
+    <div class="image-grid">
+        {% for image in images %}
+        <div class="image-card">
+            <img src="{{ image.url }}" alt="{{ image.filename }}">
+            <div class="image-info">
+                <strong>{{ image.filename }}</strong>
+                <div class="text-muted small">
+                    {{ image.size|filesizeformat }} •
+                    {{ image.uploaded_time|date:"d.m.Y H:i" }}
+                </div>
+
+                <form method="post" action="{% url 'delete_image' image.filename %}" style="display: inline;">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger btn-sm delete-btn"
+                            onclick="return confirm('Удалить это изображение?')">
+                        Удалить
+                    </button>
+                </form>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Кнопка очистки -->
+    <div class="text-center mt-4">
+        <form method="post" action="{% url 'clear_gallery' %}">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-outline-danger"
+                    onclick="return confirm('Удалить ВСЕ изображения?')">
+                🗑️ Очистить всю галерею
+            </button>
+        </form>
+    </div>
+
+    {% else %}
+    <div class="empty-gallery">
+        <h4>Галерея пуста</h4>
+        <p>Загрузите первое изображение с помощью формы выше</p>
+    </div>
+    {% endif %}
+</div>
+
+<!-- Простой JavaScript для уведомлений -->
+<script>
+    // Показываем сообщения об ошибках/успехе из Django messages
+    document.addEventListener('DOMContentLoaded', function() {
+        // Можно добавить простые уведомления если нужно
+        console.log('Галерея загружена');
+    });
+</script>
+</body>
+</html>
