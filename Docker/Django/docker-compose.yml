@@ -1,0 +1,107 @@
+services:
+  # PostgreSQL
+  postgres:
+    image: postgres:15-alpine
+    container_name: django_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-djangodb}
+      POSTGRES_USER: ${POSTGRES_USER:-django}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-djangopass}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - django-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-django}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Redis
+  redis:
+    image: redis:7-alpine
+    container_name: django_redis
+    restart: unless-stopped
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD:-redispass}
+    volumes:
+      - redis_data:/data
+    ports:
+      - "6379:6379"
+    networks:
+      - django-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Django с Uvicorn (БЕЗ статики)
+  django:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: django_app
+    restart: unless-stopped
+    command: >
+      sh -c " python manage.py migrate && \
+             uvicorn django_security.asgi:application --host 0.0.0.0 --port 8000 --workers 4"
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-django}:${POSTGRES_PASSWORD:-djangopass}@postgres:5432/${POSTGRES_DB:-djangodb}
+      REDIS_URL: redis://:${REDIS_PASSWORD:-redispass}@redis:6379/0
+      DEBUG: ${DEBUG:-False}
+      SECRET_KEY: ${SECRET_KEY:-your-secret-key-here}
+      # Отключаем сборку статики в Django контейнере
+      COLLECT_STATIC: "false"
+      ALLOWED_HOSTS: ${ALLOWED_HOSTS}
+    volumes:
+      - media_volume:/app/media
+      - ./logs/django:/var/log/django
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    networks:
+      - django-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Nginx со встроенной статикой
+  nginx:
+    build:
+      context: .
+      dockerfile: nginx/Dockerfile
+    container_name: django_nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - media_volume:/usr/share/nginx/html/media
+      - ./logs/nginx:/var/log/nginx
+    depends_on:
+      - django
+    networks:
+      - django-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/health.json"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+networks:
+  django-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  redis_data:
+  media_volume:

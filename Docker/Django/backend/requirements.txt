@@ -1,0 +1,25 @@
+# Django и ядро
+Django==5.0.1
+uvicorn[standard]==0.24.0
+#httptools==0.6.0
+uvloop==0.19.0
+websockets==12.0
+django-health-check
+
+# База данных
+psycopg2-binary==2.9.9
+asyncpg==0.29.0
+dj_database_url
+#django-db-connections==0.2.0
+
+# Redis и кэширование
+redis==5.0.1
+django-redis==5.3.0
+#hiredis==2.2.3
+
+# Статика
+whitenoise==6.6.0
+
+# Утилиты
+python-dotenv==1.0.0
+gunicorn==21.2.0  # на всякий случай
